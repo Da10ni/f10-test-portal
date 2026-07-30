@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: f10-test-portal
+    runtime: node
+    plan: free
+    buildCommand: ''
+    startCommand: npm start
+    healthCheckPath: /login
+    envVars:
+      # Render injects PORT itself; server.js already reads it.
+      # Session lifetime in seconds. Eight hours so a testing session outlives
+      # the portal logins it authenticates — at ten minutes the operator's
+      # Sessions kept expiring mid-test.
+      - key: PORTAL_TTL_SECONDS
+        value: '28800'
