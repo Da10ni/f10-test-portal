@@ -1,0 +1,13 @@
+{
+  "name": "f10-test-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Login + todo portal used to exercise F-10 session management (SSPOM) end to end.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
