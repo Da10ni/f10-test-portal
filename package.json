@@ -5,7 +5,7 @@
   "description": "Login + todo portal used to exercise F-10 session management (SSPOM) end to end.",
   "main": "server.js",
   "scripts": {
-    "start": "node init && node server.js"
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=18"
